@@ -3,6 +3,11 @@
 body { background-color: #fff; padding: 20px; }
 
 #myQuiz {
-   font-family: 'Roboto', sans-serif; font-size: 16px; font-weight: 400;
+    font-family: 'Roboto', sans-serif; font-size: 16px; font-weight: 400;
+    width: 650px; height: 650px;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    background: #000 url(../images/background.jpg) no-repeat 0px 0px;
 }
 
