@@ -1,0 +1,5 @@
+(function(){
+
+	// script goes here
+
+})();
