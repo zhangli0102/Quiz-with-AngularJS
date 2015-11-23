@@ -36,10 +36,10 @@
                     {{Answer.text}}
                 </p>
                 <div class="feedback">
-                    <p>You are <strong>correct</strong></p>
-                    <p>Oops! That is not correct.</p>
-                    <p>Additional feedback.</p>
-                    <div class="btn">Continue</div>
+                    <p ng-show="myQuestion.correctness === 'correct'">You are <strong>correct</strong></p>
+                    <p ng-show="myQuestion.correctness === 'incorrect'">Oops! That is not correct.</p>
+                    <p>{{muQuestion.feedback}}</p>
+                    <div class="btn" ng-click="selectContinue()">Continue</div>
                 </div>
             </div>
 <!--
