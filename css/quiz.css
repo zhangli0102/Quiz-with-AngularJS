@@ -103,3 +103,9 @@ body { background-color: #fff; padding: 20px; }
 #myQuiz .results .share a.btn.email { background-color: #f0a121; background-image: url(../images/icon_email.svg); }
 #myQuiz .results .share a.btn.twitter { background-color: #59adeb; background-image: url(../images/icon_twitter.svg); }
 
+#myQuiz .active, #myQuiz .inactive { transition: left 1.5s ease-in-out; }
+
+#myQuiz .active { left: 40px; }
+
+#myQuiz .intro.inactive, #myQuiz .inactive.answered { left: -1350px; }
+
