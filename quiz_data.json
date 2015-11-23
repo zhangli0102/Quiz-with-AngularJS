@@ -1,7 +1,7 @@
 [
     {
         "question" : "Saturn is the _______ planet form the Sun.",
-        "answer"   : [
+        "answers"   : [
             { "id" : 0, "text" : "Fourth" },
             { "id" : 1, "text" : "Sixth" },
             { "id" : 2, "text" : "Second" },

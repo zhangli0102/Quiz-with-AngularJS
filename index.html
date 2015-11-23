@@ -19,13 +19,20 @@
                 <p>Click begin to test your knowledge of Saturn.</p>
                 <p class="btn" ng-click="activeQuestion = 0">Begin</p>
             </div>
-<!--
-            <div class="question answered">
-                <p class="txt">This is a question</p>
-                <p class="ans">Answer 1</p>
-                <p class="ans selected">Answer 2</p>
-                <p class="ans correct">Answer 3</p>
-                <p class="ans">Answer 4</p>
+            <div class="question answered 
+                {{ $index === activeQuestion ? 'active' : 'inactive' }}
+                {{ myQuestion.questionState === 'answered' ? 'answered' : 'unanswered' }}        
+                " ng-repeat="myQuestion in myQuestions">
+                <p class="txt">{{ myQuestion.question }}</p>
+                <p class="ans"
+                   ng-class="{ 
+                        selected:isSelected($parent.$index,$index), 
+                        correct:isCorrect($parent.$index,$index) 
+                   }"
+                   ng-click="selectAnswer($parent.$index,$index)"
+                   ng-repeat="Answer in myQuestions[$index].answers">
+                    {{Answer.text}}
+                </p>
                 <div class="feedback">
                     <p>You are <strong>correct</strong></p>
                     <p>Oops! That is not correct.</p>
@@ -33,6 +40,7 @@
                     <div class="btn">Continue</div>
                 </div>
             </div>
+<!--
             <div class="results">
                 <h3>Results</h3>
                 <p>You scored X% by correctly answeing X of the total X questions.</p>
