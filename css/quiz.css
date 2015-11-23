@@ -77,6 +77,12 @@ body { background-color: #fff; padding: 20px; }
 
 #myQuiz .question.answered .ans { cursor: default; }
 
+#myQuiz .question .ans.image {
+    min-height: 60px; padding: 0px;
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+}
+
 /* Feedback */
 
 #myQuiz .feedback {
