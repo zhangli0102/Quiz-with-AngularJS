@@ -12,7 +12,11 @@
             
             <h1>Test Your Knowledge: <span>Saturn</span></h1>
             <div class="progress">
-                <div class="{{ ($index === activeQuestion) ? 'on' : 'off' }}" ng-repeat="myQuestion in myQuestions"></div>
+                <div class="
+                    {{ ($index === activeQuestion) ? 'on' : 'off' }}
+                    {{ (myQuestion.questionState === 'answered') ? 'answered' : 'unanswered' }}
+                    {{ (myQuestion.correctness === 'correct') ? 'correct' : 'incorrect' }}
+                    " ng-repeat="myQuestion in myQuestions"></div>
             </div>
             <div class="intro {{ (activeQuestion > -1) ? 'inactive' : 'active' }}">
                 <h2>Welcome</h2>
