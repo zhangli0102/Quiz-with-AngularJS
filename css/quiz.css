@@ -95,7 +95,7 @@ body { background-color: #fff; padding: 20px; }
 
 /* Results */
 
-#myQuiz .results { position: absolute; top: 225px; left: 40px; width: 550px; }
+#myQuiz .results { position: absolute; top: 225px; left: 660px; width: 550px; }
 
 #myQuiz .results .share { margin-top: 40px; }
 
@@ -114,4 +114,8 @@ body { background-color: #fff; padding: 20px; }
 #myQuiz .active { left: 40px; }
 
 #myQuiz .intro.inactive, #myQuiz .inactive.answered { left: -1350px; }
+
+/* test */
+#myQuiz { height: 1000px; }
+#myQuiz .results { top: 650px !important; left: 40px !important; }
 

@@ -30,6 +30,7 @@
                 }
                 $scope.myQuestions[qIndex].questionState = 'answered';
             }
+            $scope.percentage = (($scope.score / $scope.totalQuestions) * 100).toFixed(2);
         }
         
         $scope.isSelected = function(qIndex,aIndex){
